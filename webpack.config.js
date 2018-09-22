@@ -7,27 +7,27 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
 	devtool: "source-map",
-	entry: "./src/app.js",
+	entry: "./src/index.js",
 	mode: "development",
 	node: {
 		fs: 'empty'
-	},  
+	},
 	module: {
 		rules: [
 			{
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				loader: 'babel-loader',
-				options: { 
+				options: {
 					presets: ['env', 'react', 'stage-0']
 				}
 			},
-			{ 
-				test: /(\.css$)/, 
+			{
+				test: /(\.css$)/,
 				loaders: [
-					'style-loader', 
+					'style-loader',
 					'css-loader'
-				] 
+				]
 			},
 			{
 				test: /\.scss$/,
@@ -44,23 +44,14 @@ module.exports = {
 					}
 				]
 			},
-			// {
-			// 	test: /\.s?[ac]ss$/,
-			// 	include: path.appSrc,
-            //     use: [
-            //         MiniCssExtractPlugin.loader,
-            //         { loader: 'css-loader', options: { url: true, sourceMap: true } },
-            //         { loader: 'sass-loader', options: { sourceMap: true } }
-            //     ],
-            // },
 			{
-				test: /\.(png|jp(e*)g|svg)$/,  
+				test: /\.(png|jp(e*)g|svg)$/,
 				use: [{
 					loader: 'url-loader',
-					options: { 
+					options: {
 						limit: 8000, // Convert images < 8kb to base64 strings
 						name: 'images/[hash]-[name].[ext]'
-					} 
+					}
 				}]
 			},
 			{
@@ -75,7 +66,7 @@ module.exports = {
 		]
 	},
 	resolve: { extensions: ['*', '.js', '.jsx'] },
-	output : {
+	output: {
 		path: path.resolve(__dirname, "dist"),
 		publicPath: "/",
 		filename: "bundle.js"
@@ -87,17 +78,17 @@ module.exports = {
 		hot: true,
 		open: true
 	},
-	plugins: [ 
+	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
-			title:"Quicksoft CRM",
-			template:__dirname+'/public/index.html',
+			title: "Quicksoft CRM",
+			template: __dirname + '/public/index.html',
 			inject: 'body',
 			filename: 'index.html'
 		}),
 		new MiniCssExtractPlugin({
-            filename: devMode ? '[name].css' : '[name].[hash].css',
-      		chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
+			filename: devMode ? '[name].css' : '[name].[hash].css',
+			chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
 		})
 	]
 };
