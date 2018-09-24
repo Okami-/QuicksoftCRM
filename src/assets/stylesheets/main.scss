@@ -2,6 +2,10 @@
 @import "helpers/global";
 @import "helpers/typography";
 
+@import "mixins/animations";
+
 @import "components/sidebar";
 @import "components/main-panel";
+@import "components/header";
 
+@import "responsive";

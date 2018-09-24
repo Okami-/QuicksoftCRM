@@ -1,15 +1,32 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-
+import { Navbar } from "react-bootstrap";
 import dashboardRoutes from "../../routes/dashboard.jsx";
 
 class Sidebar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            width: window.innerWidth
+        };
+    }
+
+    updateDimensions() {
+        this.setState({ width: window.innerWidth });
+    }
+
+    componentDidMount() {
+        this.updateDimensions();
+        window.addEventListener("resize", this.updateDimensions.bind(this));
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updateDimensions.bind(this))
+    }
+
     render() {
         return (
-            <div
-                id="sidebar"
-                className="sidebar"
-            >
+            <div id="sidebar" className="sidebar">
                 <div className="sidebar-wrapper">
                     <ul className="nav">
                         {dashboardRoutes.map((prop, key) => {

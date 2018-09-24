@@ -3,7 +3,6 @@ import { Grid, Row, Col } from "react-bootstrap";
 
 
 class Customers extends Component {
-
     render() {
         return (
             <div className="content">

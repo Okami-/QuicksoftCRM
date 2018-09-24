@@ -20,7 +20,7 @@ class Dashboard extends Component {
     render() {
         return (
             <div className="wrapper">
-                <Sidebar />
+                <Sidebar {...this.props} />
                 <div id="main-panel" className="main-panel" ref="mainPanel">
                     <Header />
                     <Switch>

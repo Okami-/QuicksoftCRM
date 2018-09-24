@@ -6,6 +6,15 @@
     width: 200px;
     display: block;
     background-color: $sidebar-background;
+    .logo {
+        padding: 19px 15px 18px 15px;
+        border-bottom: 1px solid #e7e7e7;;
+        text-align: center;
+        a {
+            font-size: 16px;
+            color: white;
+        }
+    }
     .sidebar-wrapper {
         position: relative;
         height: calc(100vh - 75px);

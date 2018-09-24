@@ -31,7 +31,7 @@ const dashboardRoutes = [
     {
         redirect: true,
         path: "/",
-        to: "/dashbaord",
+        to: "/dashboard",
         name: "Dashboard"
     }
 ]
