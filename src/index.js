@@ -4,6 +4,7 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 import "./assets/stylesheets/main.scss";
 import registerServiceWorker from './registerServiceWorker';
 import indexRoutes from "./routes"
+import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 ReactDOM.render(
     <HashRouter>

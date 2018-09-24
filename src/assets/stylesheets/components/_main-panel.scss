@@ -3,7 +3,7 @@
     position: relative;
     float: right;
     width: $sidebar-width;
-
+    min-height: 100vh;
     > .content{
         padding: 30px 15px;
         min-height: calc(100% - 123px);
@@ -15,5 +15,6 @@
 
     .navbar{
         margin-bottom: 0;
+        background-color: #FFF;
     }
 }

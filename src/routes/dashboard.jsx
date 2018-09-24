@@ -7,21 +7,25 @@ const dashboardRoutes = [
     {
         path: "/dashboard",
         name: "Dashboard",
+        icon: 'fa fa-tachometer',
         component: Dashboard
     },
     {
         path: "/customers",
         name: "Customers",
+        icon: 'fa fa-users',
         component: Customers
     },
     {
         path: "/staff",
         name: "Staff",
+        icon: 'fa fa-id-badge',
         component: Staff
     },
     {
         path: "/file-explorer",
         name: "File Explorer",
+        icon: 'fa fa-folder',
         component: FileExplorer
     },
     {

@@ -16,7 +16,7 @@ class Header extends Component {
                 <Navbar.Collapse>
                     <NavItem eventKey={3} href="#">
                         <i className="fa fa-search" />
-                        <p className="hidden-lg hidden-md">Search</p>
+                        <p className="">Search</p>
                     </NavItem>
                 </Navbar.Collapse>
             </Navbar>

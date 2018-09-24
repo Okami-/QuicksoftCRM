@@ -5,15 +5,43 @@
     left: 0;
     width: 200px;
     display: block;
-    background-color: blue;
+    background-color: $sidebar-background;
     .sidebar-wrapper {
         position: relative;
         height: calc(100vh - 75px);
         overflow: auto;
         width: 200px;
         padding-bottom: 30px;
+        a.nav-link {
+            color: #FFF;
+            i.fa {
+                float: left;
+                vertical-align: middle;
+                line-height: 35px;
+                width: 35px;
+                font-size: 28px; 
+                margin-right: 15px;
+            }
+            &:hover {
+                background-color: $link-hover-background;
+                border-left: 5px solid white;
+            }
+            &.active {
+                border-left: 5px solid white;
+                background-color: $link-hover-background;
+                -webkit-box-shadow: -2px 3px 12px -4px rgba(0,0,0,0.38);
+                -moz-box-shadow: -2px 3px 12px -4px rgba(0,0,0,0.38);
+                box-shadow: -2px 3px 12px -4px rgba(0,0,0,0.38);
+            }
+            p{
+                margin: 0px;
+                font-size: 16px;
+                padding: 8px 0px;
+            }
+        }
     }
 }
+
 
 .sidebar,
 .main-panel{
