@@ -3,10 +3,13 @@
 @import "helpers/typography";
 
 @import "mixins/animations";
+@import "mixins/utility";
 
 @import "components/sidebar";
 @import "components/main-panel";
 @import "components/header";
 @import "components/table";
-
+@import "components/layout";
+@import "components/customers";
+@import "components/buttons";
 @import "responsive";

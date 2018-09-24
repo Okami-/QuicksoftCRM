@@ -44,7 +44,10 @@ class Customers extends Component {
     render() {
         return (
             <div className="content">
-                <h1>Customers</h1>
+                <div className="customer-header content-header">
+                    <h1>Customers</h1>
+                    <button className="add-customer big-button"><i class="fa fa-user-plus"></i>Add Customer</button>
+                </div>
                 <div className="customer-list">
                     <Table responsive className="no-border">
                         <thead>
