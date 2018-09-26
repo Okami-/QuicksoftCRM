@@ -25,3 +25,18 @@ h1 {
     font-weight: 500;
     color: #006BAA;
 }
+
+p{
+    font-size: $font-paragraph;
+    line-height: $line-height-general;
+}
+
+.text-success, .text-success:hover{
+    color: $success-color;
+}
+.text-warning, .text-warning:hover{
+    color: $warning-color;
+}
+.text-danger, .text-danger:hover{
+    color: $error-color;
+}

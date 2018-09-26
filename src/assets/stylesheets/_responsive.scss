@@ -16,7 +16,7 @@
         display: block;
         top: 0;
         height: 100%;
-        width: 200px;
+        width: 220px;
         right: auto;
         left: 0px;
         z-index: 1032;
@@ -34,6 +34,6 @@
         @include transform-translate-x(0px);
     }
     .nav-open .main-panel {
-        width: calc(100% - 200px);
+        width: calc(100% - 220px);
     }
 }

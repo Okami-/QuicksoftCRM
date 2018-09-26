@@ -29,6 +29,25 @@ const dashboardRoutes = [
         component: FileExplorer
     },
     {
+        path: "/agreements",
+        name: "Agreements",
+        icon: 'fa fa-folder',
+        component: FileExplorer
+    },
+    {
+        path: "/template",
+        name: "Template",
+        icon: 'fa fa-folder',
+        component: FileExplorer
+    },
+    {
+        path: "/contract",
+        name: "Contract",
+        icon: 'fa fa-folder',
+        component: FileExplorer
+    },
+
+    {
         redirect: true,
         path: "/",
         to: "/dashboard",
