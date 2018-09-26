@@ -46,38 +46,41 @@ class Staff extends Component {
     render() {
         return (
             <div className="content">
-                <div className="staff-header content-header">
-                    <h4>Staff</h4>
-                    <button className="add-staff big-button"><i class="fa fa-user-plus"></i>Add Staff </button>
-                </div>
-                <div className="customer-list">
-                    <Table responsive className="no-border">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Address</th>
-                                <th>Phone</th>
-                                <th>Email</th>
-                                <th>Created</th>
-                                <th>ID</th>
-                                <th>Settings</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {this.state.staff.map((index, key) => (
-                                <tr key={key}>
-                                    <td>{index.name}</td>
-                                    <td>{index.address}</td>
-                                    <td>{index.phone}</td>
-                                    <td>{index.email}</td>
-                                    <td>{index.created}</td>
-                                    <td>{index.id}</td>
-                                    <td><span className="fa fa-ellipsis-h fa-1x"></span></td>
+                <Grid fluid>
+                    <div className="staff-header content-header">
+                        <h4>Staff</h4>
+                        <button className="add-staff big-button"><i className="fa fa-user-plus"></i>Add Staff </button>
+                    </div>
+
+                    <div className="customer-list">
+                        <Table responsive className="no-border">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Address</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th>Created</th>
+                                    <th>ID</th>
+                                    <th>Settings</th>
                                 </tr>
-                            ))}
-                        </tbody>
-                    </Table>
-                </div>
+                            </thead>
+                            <tbody>
+                                {this.state.staff.map((index, key) => (
+                                    <tr key={key}>
+                                        <td>{index.name}</td>
+                                        <td>{index.address}</td>
+                                        <td>{index.phone}</td>
+                                        <td>{index.email}</td>
+                                        <td>{index.created}</td>
+                                        <td>{index.id}</td>
+                                        <td><span className="fa fa-ellipsis-h fa-1x"></span></td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </Table>
+                    </div>
+                </Grid>
             </div>
         );
     }

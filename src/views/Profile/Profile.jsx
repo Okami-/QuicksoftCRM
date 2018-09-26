@@ -32,7 +32,7 @@ class Profile extends Component {
                                                 <FieldGroup
                                                     label="Company"
                                                     disabled="true"
-                                                    placeHolder="Quicksoft Inc"
+                                                    placeholder="Quicksoft Inc"
                                                     type="text"
                                                 />
                                             </div>

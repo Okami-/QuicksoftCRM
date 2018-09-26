@@ -44,38 +44,41 @@ class Customers extends Component {
     render() {
         return (
             <div className="content">
-                <div className="customer-header content-header">
-                    <h4>Customers</h4>
-                    <button className="add-customer big-button"><i class="fa fa-user-plus"></i>Add Customer</button>
-                </div>
-                <div className="customer-list">
-                    <Table responsive className="no-border">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Address</th>
-                                <th>Phone</th>
-                                <th>Email</th>
-                                <th>Created</th>
-                                <th>ID</th>
-                                <th>Settings</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {this.state.customers.map((customer, key) => (
-                                <tr key={key}>
-                                    <td>{customer.name}</td>
-                                    <td>{customer.address}</td>
-                                    <td>{customer.phone}</td>
-                                    <td>{customer.email}</td>
-                                    <td>{customer.created}</td>
-                                    <td>{customer.id}</td>
-                                    <td><span className="fa fa-ellipsis-h fa-1x"></span></td>
+                <Grid fluid>
+                    <div className="customer-header content-header">
+                        <h4>Customers</h4>
+                        <button className="add-customer big-button"><i className="fa fa-user-plus"></i>Add Customer</button>
+                    </div>
+
+                    <div className="customer-list">
+                        <Table responsive className="no-border">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Address</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th>Created</th>
+                                    <th>ID</th>
+                                    <th>Settings</th>
                                 </tr>
-                            ))}
-                        </tbody>
-                    </Table>
-                </div>
+                            </thead>
+                            <tbody>
+                                {this.state.customers.map((customer, key) => (
+                                    <tr key={key}>
+                                        <td>{customer.name}</td>
+                                        <td>{customer.address}</td>
+                                        <td>{customer.phone}</td>
+                                        <td>{customer.email}</td>
+                                        <td>{customer.created}</td>
+                                        <td>{customer.id}</td>
+                                        <td><span className="fa fa-ellipsis-h fa-1x"></span></td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </Table>
+                    </div>
+                </Grid>
             </div>
         );
     }

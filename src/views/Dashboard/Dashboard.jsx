@@ -19,7 +19,8 @@ var dataCustomerRetention = {
         "Dec"
     ],
     series: [
-        [287, 385, 490, 492, 554, 586, 698, 695, 658, 700, 850, 1000]
+        [287, 385, 490, 492, 554, 586, 698, 695, 658, 700, 850, 1000],
+        [200, 315, 420, 432, 514, 526, 618, 635, 618, 700, 810, 1000]
     ]
 };
 var optionsCustomerRetention = {
@@ -44,10 +45,11 @@ class Dashboard extends Component {
     render() {
         return (
             <div className="content">
-                <div className="dashboard-header content-header">
-                    <h4>Dashboard</h4>
-                </div>
                 <Grid fluid>
+                    <div className="dashboard-header content-header">
+                        <h4>Dashboard</h4>
+                    </div>
+
                     <Row>
                         <Col lg={3} sm={6}>
                             <StatsCard
@@ -91,16 +93,26 @@ class Dashboard extends Component {
                             <Card
                                 cardTitle="Customer Retention"
                                 content={
-                                    <div className="cr-chart">
-                                        <ChartistGraph
-                                            data={dataCustomerRetention}
-                                            type="Line"
-                                            options={optionsCustomerRetention}
-                                        />
-                                    </div>
+                                    <ChartistGraph
+                                        data={dataCustomerRetention}
+                                        type="Line"
+                                        options={optionsCustomerRetention}
+                                    />
                                 }>
                             </Card>
 
+                        </Col>
+                        <Col md={4}>
+                            <Card
+                                cardTitle="Fiscal Earnings"
+                                content={
+                                    <ChartistGraph
+                                        data={dataCustomerRetention}
+                                        type="Line"
+                                        options={optionsCustomerRetention}
+                                    />
+                                }
+                            />
                         </Col>
                     </Row>
                 </Grid>
