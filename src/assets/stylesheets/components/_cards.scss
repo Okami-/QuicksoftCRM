@@ -1,9 +1,17 @@
 .card {
+    @include clearfix;
     background-color: #FFF;
     border-radius: $border-radius-card;
     margin-bottom: 30px;
     box-shadow: 0 1px 2px rgba(0,0,0,.05),0 0 0 1px rgba(63,63,68,.1);
     .content {
+        padding: 15px 15px 10px 15px;
+        .footer {
+            overflow:hidden;
+            clear: both;
+        }
+    }
+    .card-header{
         padding: 15px;
     }
 }
@@ -22,6 +30,23 @@
         text-align: right;
         p {
            margin: 0;
+        }
+    }
+}
+
+.card-user {
+    .author {
+        text-align: center;
+    }
+    .avatar{
+        width: 124px;
+        height: 124px;
+        border: 5px solid #FFFFFF;
+        position: relative;
+        margin-bottom: 15px;
+        border-radius: 50%;
+        &.border-gray{
+            border-color: #EEEEEE;
         }
     }
 }

@@ -38,12 +38,15 @@ var optionsCustomerRetention = {
         right: 50
     },
 };
+
 class Dashboard extends Component {
 
     render() {
         return (
             <div className="content">
-                <h1>Dashboard</h1>
+                <div className="dashboard-header content-header">
+                    <h4>Dashboard</h4>
+                </div>
                 <Grid fluid>
                     <Row>
                         <Col lg={3} sm={6}>

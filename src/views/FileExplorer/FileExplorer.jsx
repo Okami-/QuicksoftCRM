@@ -7,7 +7,9 @@ class FileExplorer extends Component {
     render() {
         return (
             <div className="content">
-                <h1>File Explorer</h1>
+                <div className="file-explorer-header content-header">
+                    <h4>File Explorer</h4>
+                </div>
                 <Folders />
             </div>
         );

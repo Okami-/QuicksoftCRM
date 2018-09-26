@@ -45,7 +45,7 @@ class Customers extends Component {
         return (
             <div className="content">
                 <div className="customer-header content-header">
-                    <h1>Customers</h1>
+                    <h4>Customers</h4>
                     <button className="add-customer big-button"><i class="fa fa-user-plus"></i>Add Customer</button>
                 </div>
                 <div className="customer-list">

@@ -2,6 +2,7 @@ import Dashboard from "../views/Dashboard/Dashboard";
 import Customers from "../views/Customers/Customers";
 import Staff from "../views/Staff/Staff";
 import FileExplorer from "../views/FileExplorer/FileExplorer";
+import Profile from "../views/Profile/Profile";
 
 const dashboardRoutes = [
     {
@@ -29,24 +30,11 @@ const dashboardRoutes = [
         component: FileExplorer
     },
     {
-        path: "/agreements",
-        name: "Agreements",
-        icon: 'fa fa-folder',
-        component: FileExplorer
+        path: "/profile",
+        name: "Profile",
+        icon: 'fa fa-user',
+        component: Profile
     },
-    {
-        path: "/template",
-        name: "Template",
-        icon: 'fa fa-folder',
-        component: FileExplorer
-    },
-    {
-        path: "/contract",
-        name: "Contract",
-        icon: 'fa fa-folder',
-        component: FileExplorer
-    },
-
     {
         redirect: true,
         path: "/",

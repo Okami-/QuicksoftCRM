@@ -47,7 +47,7 @@ class Staff extends Component {
         return (
             <div className="content">
                 <div className="staff-header content-header">
-                    <h1>Staff</h1>
+                    <h4>Staff</h4>
                     <button className="add-staff big-button"><i class="fa fa-user-plus"></i>Add Staff </button>
                 </div>
                 <div className="customer-list">
