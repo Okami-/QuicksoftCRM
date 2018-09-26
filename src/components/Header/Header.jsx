@@ -32,12 +32,12 @@ class Header extends Component {
                     <Navbar.Brand>
                         <a href="#">Document IQ</a>
                     </Navbar.Brand>
-                    <Navbar.Form pullLeft>
+                    {/* <Navbar.Form pullLeft>
                         <FormGroup>
                             <FormControl type="text" placeholder="Search" />
                         </FormGroup>{' '}
                         <Button type="submit">Submit</Button>
-                    </Navbar.Form>
+                    </Navbar.Form> */}
                 </Navbar.Header>
             </Navbar>
         );

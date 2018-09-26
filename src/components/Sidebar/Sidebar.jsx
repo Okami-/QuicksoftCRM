@@ -39,7 +39,7 @@ class Sidebar extends Component {
                                             activeClassName="active"
                                         >
                                             <i className={prop.icon} />
-                                            <p>{prop.name}</p>
+                                            {/* <p>{prop.name}</p> */}
                                         </NavLink>
                                     </li>
                                 );

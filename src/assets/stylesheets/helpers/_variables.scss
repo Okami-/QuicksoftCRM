@@ -1,15 +1,47 @@
-$sidebar-width: calc(100% - 220px) !default;
-$sidebar-background: #006BAA;
-$link-hover-background: #69D0F1;
+$sidebar-width: calc(100% - 60px) !default;
+
 $border-radius-card: 4px;
-$font-paragraph: 16px;
+
 $line-height-general: 1.5;
+
+// Colors
+
 $warning-color: #FFC43D;
 $success-color: #06D6A0;
 $error-color: #EF476F;
+
+$sidebar-background: #006BAA;
+$link-hover-background: #69D0F1;
+
+$blue-color: #006BAA;
+$light-blue-color: #69D0F1;
+$green-color: #06D6A0;
+
+$white-color: #FFFFFF;
+
+$light-gray: #F6F7FB;
+$medium-gray: #B2B2B2;
+$medium-dark-gray: #777777;
+$dark-gray: #495057;
+
+
+// Type
+$font-size-base: 14px;
+$font-size-small: 12px;
+$font-size-medium: 16px;
+$font-size-large: 18px;
+
 $font-size-h1: 52px;           
 $font-size-h2: 36px;
 $font-size-h3: 28px;
 $font-size-h4: 22px;
 $font-size-h5: 16px;
 $font-size-h6: 14px;
+$font-paragraph: 16px;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semi: 500;
+$font-weight-bold: 600;
+
+

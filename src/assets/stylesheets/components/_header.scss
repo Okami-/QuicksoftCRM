@@ -1,6 +1,12 @@
 .navbar {
-    padding: 5px 0px;
+    padding: 3px 0px 2px;
     border-left: none;
     border-top: none;
     border-right: none;
+    border-radius: 0px;
+    .navbar-toggle {
+        float: left;
+        background-color: none;
+        border: none;
+    }
 }

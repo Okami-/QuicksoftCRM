@@ -5,6 +5,13 @@
 .table {
     border-collapse:separate; 
     border-spacing: 0 1em;
+    thead > tr > th {
+        font-size: $font-size-small;
+        font-weight: $font-weight-normal;
+        text-transform: uppercase;
+        color: $dark-gray;
+        padding-bottom: 0px;
+    }
     tbody {
         tr:first-child td:first-child { border-top-left-radius: 5px; }
         tr:first-child td:last-child { border-top-right-radius: 5px; }
