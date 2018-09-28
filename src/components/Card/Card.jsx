@@ -13,7 +13,7 @@ export class Card extends Component {
                 <div className="content">
                     {this.props.content}
                     <div className="footer">
-                        <hr />
+                        {this.props.stats != null ? <hr /> : ""}
                         <div className="stats">
                             {this.props.stats}
                         </div>
